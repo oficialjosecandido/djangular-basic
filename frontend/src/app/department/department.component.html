@@ -1,0 +1,7 @@
+<p>department works!</p>
+<ul *ngFor="let dep of Departments" >
+    <li>{{dep.DepartmentId}} - {{dep.DepartmentName}} </li>
+</ul>
+
+<input type="text" class="form-control" [(ngModel)]="DepartmentName" placeholder="Department Name">
+<button (click)="addDepartment()" >Add Department</button>
